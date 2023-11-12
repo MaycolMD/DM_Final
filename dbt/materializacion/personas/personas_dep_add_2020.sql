@@ -1,0 +1,1 @@
+SELECT *, 2020 AS FECHA FROM {{ source('personas', 'personas_dep_2020') }}

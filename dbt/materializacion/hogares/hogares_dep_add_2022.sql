@@ -1,0 +1,1 @@
+SELECT *, 2022 AS FECHA FROM {{ source('hogares', 'hogares_dep_2022') }}
