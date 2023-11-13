@@ -11088,3 +11088,992 @@ FROM `thinking-pillar-402721`.`tablas_dep`.`personas_dep`, __dbt__cte__median_
 [0m09:37:32.811025 [debug] [MainThread]: Command `dbt run` succeeded at 09:37:32.811025 after 85.25 seconds
 [0m09:37:32.811025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0566B71F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F059FE3CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F05A353DC0>]}
 [0m09:37:32.812030 [debug] [MainThread]: Flushing usage events
+[0m16:58:02.417226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE2C73A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DDB59E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DDB59C90>]}
+
+
+============================== 16:58:02.443389 | ed4c033c-0cc5-4a22-bfda-635e9ea26829 ==============================
+[0m16:58:02.443389 [info ] [MainThread]: Running with dbt=1.7.1
+[0m16:58:02.444390 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'D:\\Python\\DM_Final\\dbt', 'log_path': 'D:\\Python\\DM_Final\\dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m16:58:04.111242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed4c033c-0cc5-4a22-bfda-635e9ea26829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298E167E170>]}
+[0m16:58:04.181119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed4c033c-0cc5-4a22-bfda-635e9ea26829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DDB19930>]}
+[0m16:58:04.181912 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m16:58:04.193244 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m16:58:05.007460 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:58:05.007460 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:58:05.012987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed4c033c-0cc5-4a22-bfda-635e9ea26829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298E1FB8490>]}
+[0m16:58:05.035881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed4c033c-0cc5-4a22-bfda-635e9ea26829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298E1F7E290>]}
+[0m16:58:05.035881 [info ] [MainThread]: Found 33 models, 15 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m16:58:05.035881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed4c033c-0cc5-4a22-bfda-635e9ea26829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298E1F7DF30>]}
+[0m16:58:05.038427 [info ] [MainThread]: 
+[0m16:58:05.038933 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:58:05.039939 [debug] [MainThread]: Command end result
+[0m16:58:05.047335 [debug] [MainThread]: Command `dbt test` succeeded at 16:58:05.047335 after 2.70 seconds
+[0m16:58:05.047839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE2C73A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DDB19930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298E1F7CB50>]}
+[0m16:58:05.048343 [debug] [MainThread]: Flushing usage events
+[0m16:58:10.899915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7FD7473D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7803E9ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7803E9CF0>]}
+
+
+============================== 16:58:10.902957 | 0ab7cfbd-ddc4-4545-b216-d85f04783845 ==============================
+[0m16:58:10.902957 [info ] [MainThread]: Running with dbt=1.7.1
+[0m16:58:10.903958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Python\\DM_Final\\dbt\\logs', 'profiles_dir': 'D:\\Python\\DM_Final\\dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:58:11.498365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C780CAA890>]}
+[0m16:58:11.568234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7803A9E70>]}
+[0m16:58:11.569241 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m16:58:11.576290 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m16:58:11.689226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:58:11.689226 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:58:11.695253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7815E85B0>]}
+[0m16:58:11.707329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7815AA3B0>]}
+[0m16:58:11.708201 [info ] [MainThread]: Found 33 models, 15 sources, 0 exposures, 0 metrics, 447 macros, 0 groups, 0 semantic models
+[0m16:58:11.708201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7815AA0B0>]}
+[0m16:58:11.710206 [info ] [MainThread]: 
+[0m16:58:11.711235 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:58:11.713236 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_thinking-pillar-402721'
+[0m16:58:11.714237 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:58:12.901267 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_thinking-pillar-402721_tablas_dep'
+[0m16:58:12.902267 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:58:13.894660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C781256D70>]}
+[0m16:58:13.895660 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:58:13.895660 [info ] [MainThread]: 
+[0m16:58:13.899340 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep_add_2018
+[0m16:58:13.899340 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.ipm_departamental.hogares_dep_add_2018'
+[0m16:58:13.900369 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep_add_2018
+[0m16:58:13.906370 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep_add_2018"
+[0m16:58:13.907369 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep_add_2018 (compile): 16:58:13.900369 => 16:58:13.907369
+[0m16:58:13.908133 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep_add_2018
+[0m16:58:13.909137 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep_add_2019
+[0m16:58:13.909137 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep_add_2018, now model.ipm_departamental.hogares_dep_add_2019)
+[0m16:58:13.910139 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep_add_2019
+[0m16:58:13.913173 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep_add_2019"
+[0m16:58:13.913173 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep_add_2019 (compile): 16:58:13.910139 => 16:58:13.913173
+[0m16:58:13.914173 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep_add_2019
+[0m16:58:13.915173 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep_add_2020
+[0m16:58:13.915173 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep_add_2019, now model.ipm_departamental.hogares_dep_add_2020)
+[0m16:58:13.916173 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep_add_2020
+[0m16:58:13.919193 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep_add_2020"
+[0m16:58:13.920192 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep_add_2020 (compile): 16:58:13.916173 => 16:58:13.919193
+[0m16:58:13.920192 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep_add_2020
+[0m16:58:13.921222 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep_add_2021
+[0m16:58:13.922223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep_add_2020, now model.ipm_departamental.hogares_dep_add_2021)
+[0m16:58:13.922223 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep_add_2021
+[0m16:58:13.924222 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep_add_2021"
+[0m16:58:13.925709 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep_add_2021 (compile): 16:58:13.922223 => 16:58:13.924222
+[0m16:58:13.925709 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep_add_2021
+[0m16:58:13.925709 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep_add_2022
+[0m16:58:13.927213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep_add_2021, now model.ipm_departamental.hogares_dep_add_2022)
+[0m16:58:13.928219 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep_add_2022
+[0m16:58:13.929728 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep_add_2022"
+[0m16:58:13.930728 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep_add_2022 (compile): 16:58:13.928219 => 16:58:13.930728
+[0m16:58:13.931793 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep_add_2022
+[0m16:58:13.932763 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep_add_2018
+[0m16:58:13.932763 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep_add_2022, now model.ipm_departamental.personas_dep_add_2018)
+[0m16:58:13.933762 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep_add_2018
+[0m16:58:13.935763 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep_add_2018"
+[0m16:58:13.935763 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep_add_2018 (compile): 16:58:13.933762 => 16:58:13.935763
+[0m16:58:13.937267 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep_add_2018
+[0m16:58:13.938272 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep_add_2019
+[0m16:58:13.938272 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep_add_2018, now model.ipm_departamental.personas_dep_add_2019)
+[0m16:58:13.939601 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep_add_2019
+[0m16:58:13.941600 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep_add_2019"
+[0m16:58:13.981224 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep_add_2019 (compile): 16:58:13.939601 => 16:58:13.980213
+[0m16:58:13.982224 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep_add_2019
+[0m16:58:13.982313 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep_add_2020
+[0m16:58:13.983314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep_add_2019, now model.ipm_departamental.personas_dep_add_2020)
+[0m16:58:13.984313 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep_add_2020
+[0m16:58:13.987352 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep_add_2020"
+[0m16:58:13.987857 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep_add_2020 (compile): 16:58:13.984313 => 16:58:13.987857
+[0m16:58:13.988360 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep_add_2020
+[0m16:58:13.989365 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep_add_2021
+[0m16:58:13.989365 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep_add_2020, now model.ipm_departamental.personas_dep_add_2021)
+[0m16:58:13.990365 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep_add_2021
+[0m16:58:13.992364 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep_add_2021"
+[0m16:58:13.993398 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep_add_2021 (compile): 16:58:13.990365 => 16:58:13.993398
+[0m16:58:13.994398 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep_add_2021
+[0m16:58:13.994398 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep_add_2022
+[0m16:58:13.995397 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep_add_2021, now model.ipm_departamental.personas_dep_add_2022)
+[0m16:58:13.996398 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep_add_2022
+[0m16:58:13.998407 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep_add_2022"
+[0m16:58:13.999412 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep_add_2022 (compile): 16:58:13.996398 => 16:58:13.999412
+[0m16:58:14.000411 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep_add_2022
+[0m16:58:14.000411 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep_add_2018
+[0m16:58:14.001413 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep_add_2022, now model.ipm_departamental.viviendas_dep_add_2018)
+[0m16:58:14.002138 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep_add_2018
+[0m16:58:14.004442 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep_add_2018"
+[0m16:58:14.005442 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep_add_2018 (compile): 16:58:14.002411 => 16:58:14.005442
+[0m16:58:14.006442 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep_add_2018
+[0m16:58:14.006442 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep_add_2019
+[0m16:58:14.007442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep_add_2018, now model.ipm_departamental.viviendas_dep_add_2019)
+[0m16:58:14.007947 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep_add_2019
+[0m16:58:14.009456 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep_add_2019"
+[0m16:58:14.010456 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep_add_2019 (compile): 16:58:14.008451 => 16:58:14.010456
+[0m16:58:14.011455 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep_add_2019
+[0m16:58:14.011455 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep_add_2020
+[0m16:58:14.012455 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep_add_2019, now model.ipm_departamental.viviendas_dep_add_2020)
+[0m16:58:14.013512 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep_add_2020
+[0m16:58:14.015569 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep_add_2020"
+[0m16:58:14.015569 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep_add_2020 (compile): 16:58:14.013568 => 16:58:14.015569
+[0m16:58:14.017073 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep_add_2020
+[0m16:58:14.017073 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep_add_2021
+[0m16:58:14.018078 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep_add_2020, now model.ipm_departamental.viviendas_dep_add_2021)
+[0m16:58:14.018584 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep_add_2021
+[0m16:58:14.020588 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep_add_2021"
+[0m16:58:14.021588 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep_add_2021 (compile): 16:58:14.018584 => 16:58:14.021588
+[0m16:58:14.022589 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep_add_2021
+[0m16:58:14.022589 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep_add_2022
+[0m16:58:14.022589 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep_add_2021, now model.ipm_departamental.viviendas_dep_add_2022)
+[0m16:58:14.024092 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep_add_2022
+[0m16:58:14.026127 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep_add_2022"
+[0m16:58:14.027127 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep_add_2022 (compile): 16:58:14.024092 => 16:58:14.026127
+[0m16:58:14.027632 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep_add_2022
+[0m16:58:14.028136 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogaresDepIpm2018
+[0m16:58:14.029141 [info ] [Thread-1 (]: 1 of 15 START sql table model tablas_dep.hogaresDepIpm2018 ..................... [RUN]
+[0m16:58:14.029141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep_add_2022, now model.ipm_departamental.hogaresDepIpm2018)
+[0m16:58:14.030143 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogaresDepIpm2018
+[0m16:58:14.033140 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogaresDepIpm2018"
+[0m16:58:14.034140 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2018 (compile): 16:58:14.030143 => 16:58:14.034140
+[0m16:58:14.034140 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.hogaresDepIpm2018
+[0m16:58:14.045236 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:15.053430 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.hogaresDepIpm2018"
+[0m16:58:15.054430 [debug] [Thread-1 (]: On model.ipm_departamental.hogaresDepIpm2018: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.hogaresDepIpm2018"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2018`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__hogares_dep_add_2018 as (
+SELECT *, 2018 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2018`
+) SELECT
+    * EXCEPT(ipm),
+    ipm / 100 AS ipm
+FROM __dbt__cte__hogares_dep_add_2018
+    );
+  
+[0m16:58:15.613497 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:124dc7a6-b428-4e03-a980-6f03a2e7dd1c&page=queryresults
+[0m16:58:18.710563 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2018 (execute): 16:58:14.035172 => 16:58:18.710563
+[0m16:58:18.711562 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816A1AE0>]}
+[0m16:58:18.712563 [info ] [Thread-1 (]: 1 of 15 OK created sql table model tablas_dep.hogaresDepIpm2018 ................ [[32mCREATE TABLE (89.5k rows, 19.8 MiB processed)[0m in 4.68s]
+[0m16:58:18.713565 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogaresDepIpm2018
+[0m16:58:18.713565 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogaresDepIpm2019
+[0m16:58:18.714562 [info ] [Thread-1 (]: 2 of 15 START sql table model tablas_dep.hogaresDepIpm2019 ..................... [RUN]
+[0m16:58:18.715563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogaresDepIpm2018, now model.ipm_departamental.hogaresDepIpm2019)
+[0m16:58:18.715563 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogaresDepIpm2019
+[0m16:58:18.718610 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogaresDepIpm2019"
+[0m16:58:18.719615 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2019 (compile): 16:58:18.715563 => 16:58:18.719615
+[0m16:58:18.720615 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.hogaresDepIpm2019
+[0m16:58:18.722614 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:19.710452 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.hogaresDepIpm2019"
+[0m16:58:19.711453 [debug] [Thread-1 (]: On model.ipm_departamental.hogaresDepIpm2019: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.hogaresDepIpm2019"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2019`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__hogares_dep_add_2019 as (
+SELECT *, 2019 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2019`
+) SELECT
+    * EXCEPT(ipm),
+    ipm / 100 AS ipm
+FROM __dbt__cte__hogares_dep_add_2019
+    );
+  
+[0m16:58:20.267830 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:202093b2-f438-4b11-8008-c53eaad70ff7&page=queryresults
+[0m16:58:25.499460 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2019 (execute): 16:58:18.720615 => 16:58:25.499460
+[0m16:58:25.500466 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C781687490>]}
+[0m16:58:25.501499 [info ] [Thread-1 (]: 2 of 15 OK created sql table model tablas_dep.hogaresDepIpm2019 ................ [[32mCREATE TABLE (94.0k rows, 20.8 MiB processed)[0m in 6.79s]
+[0m16:58:25.502499 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogaresDepIpm2019
+[0m16:58:25.503015 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogaresDepIpm2020
+[0m16:58:25.503015 [info ] [Thread-1 (]: 3 of 15 START sql table model tablas_dep.hogaresDepIpm2020 ..................... [RUN]
+[0m16:58:25.504021 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogaresDepIpm2019, now model.ipm_departamental.hogaresDepIpm2020)
+[0m16:58:25.505020 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogaresDepIpm2020
+[0m16:58:25.510039 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogaresDepIpm2020"
+[0m16:58:25.511039 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2020 (compile): 16:58:25.505020 => 16:58:25.510039
+[0m16:58:25.511039 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.hogaresDepIpm2020
+[0m16:58:25.513069 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:26.514450 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.hogaresDepIpm2020"
+[0m16:58:26.515450 [debug] [Thread-1 (]: On model.ipm_departamental.hogaresDepIpm2020: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.hogaresDepIpm2020"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2020`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__hogares_dep_add_2020 as (
+SELECT *, 2020 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2020`
+) SELECT
+    * EXCEPT(ipm),
+    ipm / 100 AS ipm
+FROM __dbt__cte__hogares_dep_add_2020
+    );
+  
+[0m16:58:27.004549 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:b8c9c639-4c52-4008-b895-ff244f4d9417&page=queryresults
+[0m16:58:29.971445 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogaresDepIpm2020 (execute): 16:58:25.511039 => 16:58:29.971445
+[0m16:58:29.972445 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C781666E30>]}
+[0m16:58:29.972445 [info ] [Thread-1 (]: 3 of 15 OK created sql table model tablas_dep.hogaresDepIpm2020 ................ [[32mCREATE TABLE (88.3k rows, 19.5 MiB processed)[0m in 4.47s]
+[0m16:58:29.973445 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogaresDepIpm2020
+[0m16:58:29.974449 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personasCamposNulos2018
+[0m16:58:29.974449 [info ] [Thread-1 (]: 4 of 15 START sql table model tablas_dep.personasCamposNulos2018 ............... [RUN]
+[0m16:58:29.975449 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogaresDepIpm2020, now model.ipm_departamental.personasCamposNulos2018)
+[0m16:58:29.976449 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personasCamposNulos2018
+[0m16:58:29.992463 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personasCamposNulos2018"
+[0m16:58:29.993464 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2018 (compile): 16:58:29.976449 => 16:58:29.992463
+[0m16:58:29.993464 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personasCamposNulos2018
+[0m16:58:29.995463 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:30.942170 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personasCamposNulos2018"
+[0m16:58:30.964303 [debug] [Thread-1 (]: On model.ipm_departamental.personasCamposNulos2018: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personasCamposNulos2018"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2018`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__personas_dep_add_2018 as (
+SELECT *, 2018 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2018`
+) --4
+SELECT
+  DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, ORDEN, P6020, P6040, fex_c, P6051, P6090, P5665,
+  NULLIF(TRIM(P8563), '') AS P8563,
+  NULLIF(TRIM(P51), '') AS P51,
+  NULLIF(TRIM(P55), '') AS P55,
+  NULLIF(TRIM(P774), '') AS P774,
+  NULLIF(TRIM(P6160), '') AS P6160,
+  NULLIF(TRIM(P8586), '') AS P8586,
+  NULLIF(TRIM(P8587), '') AS P8587,
+  NULLIF(TRIM(P8587S1), '') AS P8587S1,
+  NULLIF(TRIM(P1088), '') AS P1088,
+  NULLIF(TRIM(P1088S1), '') AS P1088S1,
+  NULLIF(TRIM(P6180), '') AS P6180,
+  NULLIF(TRIM(P6240), '') AS P6240,
+  NULLIF(TRIM(P6250), '') AS P6250,
+  NULLIF(TRIM(P6260), '') AS P6260,
+  NULLIF(TRIM(P6270), '') AS P6270,
+  NULLIF(TRIM(P6351), '') AS P6351,
+  NULLIF(TRIM(P6390S1), '') AS P6390,
+  NULLIF(TRIM(P7250), '') AS P7250,
+  NULLIF(TRIM(P6920), '') AS P6920,
+  FECHA
+FROM
+  __dbt__cte__personas_dep_add_2018
+    );
+  
+[0m16:58:31.479532 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:b873fd8d-a340-4082-8057-fad8823d4726&page=queryresults
+[0m16:58:35.692900 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2018 (execute): 16:58:29.993464 => 16:58:35.692900
+[0m16:58:35.693898 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816DB580>]}
+[0m16:58:35.693898 [info ] [Thread-1 (]: 4 of 15 OK created sql table model tablas_dep.personasCamposNulos2018 .......... [[32mCREATE TABLE (283.0k rows, 37.3 MiB processed)[0m in 5.72s]
+[0m16:58:35.694900 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personasCamposNulos2018
+[0m16:58:35.695898 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personasCamposNulos2019
+[0m16:58:35.695898 [info ] [Thread-1 (]: 5 of 15 START sql table model tablas_dep.personasCamposNulos2019 ............... [RUN]
+[0m16:58:35.695898 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personasCamposNulos2018, now model.ipm_departamental.personasCamposNulos2019)
+[0m16:58:35.697429 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personasCamposNulos2019
+[0m16:58:35.710514 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personasCamposNulos2019"
+[0m16:58:35.711514 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2019 (compile): 16:58:35.697429 => 16:58:35.711514
+[0m16:58:35.712319 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personasCamposNulos2019
+[0m16:58:35.714453 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:36.735471 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personasCamposNulos2019"
+[0m16:58:36.736471 [debug] [Thread-1 (]: On model.ipm_departamental.personasCamposNulos2019: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personasCamposNulos2019"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2019`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__personas_dep_add_2019 as (
+SELECT *, 2019 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2019`
+) --4
+SELECT
+  DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, ORDEN, P6020, P6040, fex_c, P6051, P6090, P5665,
+  NULLIF(TRIM(P8563), '') AS P8563,
+  NULLIF(TRIM(P51), '') AS P51,
+  NULLIF(TRIM(P55), '') AS P55,
+  NULLIF(TRIM(P774), '') AS P774,
+  NULLIF(TRIM(P6160), '') AS P6160,
+  NULLIF(TRIM(P8586), '') AS P8586,
+  NULLIF(TRIM(P8587), '') AS P8587,
+  NULLIF(TRIM(P8587S1), '') AS P8587S1,
+  NULLIF(TRIM(P1088), '') AS P1088,
+  NULLIF(TRIM(P1088S1), '') AS P1088S1,
+  NULLIF(TRIM(P6180), '') AS P6180,
+  NULLIF(TRIM(P6240), '') AS P6240,
+  NULLIF(TRIM(P6250), '') AS P6250,
+  NULLIF(TRIM(P6260), '') AS P6260,
+  NULLIF(TRIM(P6270), '') AS P6270,
+  NULLIF(TRIM(P6351), '') AS P6351,
+  NULLIF(TRIM(P6390S1), '') AS P6390,
+  NULLIF(TRIM(P7250), '') AS P7250,
+  NULLIF(TRIM(P6920), '') AS P6920,
+  FECHA
+FROM
+  __dbt__cte__personas_dep_add_2019
+    );
+  
+[0m16:58:37.192856 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:5362b286-2888-44d5-952d-3ebb61f7e5b1&page=queryresults
+[0m16:58:41.437186 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2019 (execute): 16:58:35.712319 => 16:58:41.435682
+[0m16:58:41.437186 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816787F0>]}
+[0m16:58:41.438696 [info ] [Thread-1 (]: 5 of 15 OK created sql table model tablas_dep.personasCamposNulos2019 .......... [[32mCREATE TABLE (289.6k rows, 37.9 MiB processed)[0m in 5.74s]
+[0m16:58:41.439703 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personasCamposNulos2019
+[0m16:58:41.439703 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personasCamposNulos2020
+[0m16:58:41.440734 [info ] [Thread-1 (]: 6 of 15 START sql table model tablas_dep.personasCamposNulos2020 ............... [RUN]
+[0m16:58:41.440734 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personasCamposNulos2019, now model.ipm_departamental.personasCamposNulos2020)
+[0m16:58:41.441870 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personasCamposNulos2020
+[0m16:58:41.455626 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personasCamposNulos2020"
+[0m16:58:41.455626 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2020 (compile): 16:58:41.441870 => 16:58:41.455626
+[0m16:58:41.457130 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personasCamposNulos2020
+[0m16:58:41.464197 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:42.489483 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personasCamposNulos2020"
+[0m16:58:42.491478 [debug] [Thread-1 (]: On model.ipm_departamental.personasCamposNulos2020: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personasCamposNulos2020"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2020`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__personas_dep_add_2020 as (
+SELECT *, 2020 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2020`
+) --4
+SELECT
+  DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, ORDEN, P6020, P6040, fex_c, P6051, P6090, P5665,
+  NULLIF(TRIM(P8563), '') AS P8563,
+  NULLIF(TRIM(P51), '') AS P51,
+  NULLIF(TRIM(P55), '') AS P55,
+  NULLIF(TRIM(P774), '') AS P774,
+  NULLIF(TRIM(P6160), '') AS P6160,
+  NULLIF(TRIM(P8586), '') AS P8586,
+  NULLIF(TRIM(P8587), '') AS P8587,
+  NULLIF(TRIM(P8587S1), '') AS P8587S1,
+  NULLIF(TRIM(P1088), '') AS P1088,
+  NULLIF(TRIM(P1088S1), '') AS P1088S1,
+  NULLIF(TRIM(P6180), '') AS P6180,
+  NULLIF(TRIM(P6240), '') AS P6240,
+  NULLIF(TRIM(P6250), '') AS P6250,
+  NULLIF(TRIM(P6260), '') AS P6260,
+  NULLIF(TRIM(P6270), '') AS P6270,
+  NULLIF(TRIM(P6351), '') AS P6351,
+  NULLIF(TRIM(P6390), '') AS P6390,
+  NULLIF(TRIM(P7250), '') AS P7250,
+  NULLIF(TRIM(P6920), '') AS P6920,
+  FECHA
+FROM
+  __dbt__cte__personas_dep_add_2020
+    );
+  
+[0m16:58:42.952241 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:5647a7ee-6c9b-4be4-b390-a5869141440d&page=queryresults
+[0m16:58:46.800167 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2020 (execute): 16:58:41.457130 => 16:58:46.800167
+[0m16:58:46.801195 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C781685AE0>]}
+[0m16:58:46.801195 [info ] [Thread-1 (]: 6 of 15 OK created sql table model tablas_dep.personasCamposNulos2020 .......... [[32mCREATE TABLE (267.1k rows, 38.0 MiB processed)[0m in 5.36s]
+[0m16:58:46.802197 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personasCamposNulos2020
+[0m16:58:46.803195 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personasCamposNulos2021
+[0m16:58:46.803195 [info ] [Thread-1 (]: 7 of 15 START sql table model tablas_dep.personasCamposNulos2021 ............... [RUN]
+[0m16:58:46.804195 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personasCamposNulos2020, now model.ipm_departamental.personasCamposNulos2021)
+[0m16:58:46.804195 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personasCamposNulos2021
+[0m16:58:46.822066 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personasCamposNulos2021"
+[0m16:58:46.823071 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2021 (compile): 16:58:46.805195 => 16:58:46.823071
+[0m16:58:46.824072 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personasCamposNulos2021
+[0m16:58:46.826071 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:47.852378 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personasCamposNulos2021"
+[0m16:58:47.853378 [debug] [Thread-1 (]: On model.ipm_departamental.personasCamposNulos2021: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personasCamposNulos2021"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2021`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__personas_dep_add_2021 as (
+SELECT *, 2021 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2021`
+) --4
+SELECT
+  DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, ORDEN, P6020, P6040, fex_c, NULL as P6051, P6090, P5665,
+  NULLIF(TRIM(CAST(P8563 AS STRING)),'') AS P8563,
+  NULLIF(TRIM(CAST(P51 AS STRING)), '') AS P51,
+  NULLIF(TRIM(CAST(P55 AS STRING)), '') AS P55,
+  NULLIF(TRIM(CAST(P774 AS STRING)), '') AS P774,
+  NULLIF(TRIM(CAST(P6160 AS STRING)), '') AS P6160,
+  NULLIF(TRIM(CAST(P8586 AS STRING)), '') AS P8586,
+  NULLIF(TRIM(CAST(P8587 AS STRING)), '') AS P8587,
+  NULLIF(TRIM(CAST(P8587S1 AS STRING)), '') AS P8587S1,
+  NULLIF(TRIM(CAST(P1088 AS STRING)), '') AS P1088,
+  NULLIF(TRIM(CAST(P1088S1 AS STRING)), '') AS P1088S1,
+  NULLIF(TRIM(CAST(P6180 AS STRING)), '') AS P6180,
+  NULLIF(TRIM(CAST(P6240 AS STRING)), '') AS P6240,
+  NULLIF(TRIM(CAST(P6250 AS STRING)), '') AS P6250,
+  NULLIF(TRIM(CAST(P6260 AS STRING)), '') AS P6260,
+  NULLIF(TRIM(CAST(P6270 AS STRING)), '') AS P6270,
+  NULLIF(TRIM(CAST(P6351 AS STRING)), '') AS P6351,
+  NULLIF(TRIM(CAST(P6390 AS STRING)), '') AS P6390,
+  NULLIF(TRIM(CAST(P7250 AS STRING)), '') AS P7250,
+  NULLIF(TRIM(CAST(P6920 AS STRING)), '') AS P6920,
+  FECHA
+FROM
+  __dbt__cte__personas_dep_add_2021
+    );
+  
+[0m16:58:48.277229 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:073a1c6d-947d-443d-a076-ad9651e32655&page=queryresults
+[0m16:58:53.123477 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2021 (execute): 16:58:46.824072 => 16:58:53.123477
+[0m16:58:53.124477 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816627D0>]}
+[0m16:58:53.124477 [info ] [Thread-1 (]: 7 of 15 OK created sql table model tablas_dep.personasCamposNulos2021 .......... [[32mCREATE TABLE (257.6k rows, 34.9 MiB processed)[0m in 6.32s]
+[0m16:58:53.125477 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personasCamposNulos2021
+[0m16:58:53.126478 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personasCamposNulos2022
+[0m16:58:53.126478 [info ] [Thread-1 (]: 8 of 15 START sql table model tablas_dep.personasCamposNulos2022 ............... [RUN]
+[0m16:58:53.127982 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personasCamposNulos2021, now model.ipm_departamental.personasCamposNulos2022)
+[0m16:58:53.128486 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personasCamposNulos2022
+[0m16:58:53.147075 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personasCamposNulos2022"
+[0m16:58:53.148082 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2022 (compile): 16:58:53.128486 => 16:58:53.147075
+[0m16:58:53.148082 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personasCamposNulos2022
+[0m16:58:53.150247 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:58:54.165515 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personasCamposNulos2022"
+[0m16:58:54.166516 [debug] [Thread-1 (]: On model.ipm_departamental.personasCamposNulos2022: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personasCamposNulos2022"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2022`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__personas_dep_add_2022 as (
+SELECT *, 2022 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2022`
+) --4
+SELECT
+  DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, ORDEN, P6020, P6040, fex_c, P6051, P6090, P5665,
+  NULLIF(TRIM(CAST(P8563 AS STRING)),'') AS P8563,
+  NULLIF(TRIM(CAST(P51 AS STRING)), '') AS P51,
+  NULLIF(TRIM(CAST(P55 AS STRING)), '') AS P55,
+  NULLIF(TRIM(CAST(P774 AS STRING)), '') AS P774,
+  NULLIF(TRIM(CAST(P6160 AS STRING)), '') AS P6160,
+  NULLIF(TRIM(CAST(P8586 AS STRING)), '') AS P8586,
+  NULLIF(TRIM(CAST(P8587 AS STRING)), '') AS P8587,
+  NULLIF(TRIM(CAST(P8587S1 AS STRING)), '') AS P8587S1,
+  NULLIF(TRIM(CAST(P1088 AS STRING)), '') AS P1088,
+  NULLIF(TRIM(CAST(P1088S1 AS STRING)), '') AS P1088S1,
+  NULLIF(TRIM(CAST(P6180 AS STRING)), '') AS P6180,
+  NULLIF(TRIM(CAST(P6240 AS STRING)), '') AS P6240,
+  NULLIF(TRIM(CAST(P6250 AS STRING)), '') AS P6250,
+  NULLIF(TRIM(CAST(P6260 AS STRING)), '') AS P6260,
+  NULLIF(TRIM(CAST(P6270 AS STRING)), '') AS P6270,
+  NULLIF(TRIM(CAST(P6351 AS STRING)), '') AS P6351,
+  NULLIF(TRIM(CAST(P6390 AS STRING)), '') AS P6390,
+  NULLIF(TRIM(CAST(P7250 AS STRING)), '') AS P7250,
+  NULLIF(TRIM(CAST(P6920 AS STRING)), '') AS P6920,
+  FECHA
+FROM
+  __dbt__cte__personas_dep_add_2022
+    );
+  
+[0m16:58:54.672749 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:5ff08982-8ab8-4c9b-8ed2-1c1652127ae6&page=queryresults
+[0m16:59:00.052803 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personasCamposNulos2022 (execute): 16:58:53.148082 => 16:59:00.052803
+[0m16:59:00.053812 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C78278F790>]}
+[0m16:59:00.054813 [info ] [Thread-1 (]: 8 of 15 OK created sql table model tablas_dep.personasCamposNulos2022 .......... [[32mCREATE TABLE (251.9k rows, 36.5 MiB processed)[0m in 6.93s]
+[0m16:59:00.055810 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personasCamposNulos2022
+[0m16:59:00.055810 [debug] [Thread-1 (]: Began running node model.ipm_departamental.viviendas_dep
+[0m16:59:00.055810 [info ] [Thread-1 (]: 9 of 15 START sql table model tablas_dep.viviendas_dep ......................... [RUN]
+[0m16:59:00.057314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personasCamposNulos2022, now model.ipm_departamental.viviendas_dep)
+[0m16:59:00.058320 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.viviendas_dep
+[0m16:59:00.062376 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.viviendas_dep"
+[0m16:59:00.063376 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep (compile): 16:59:00.058320 => 16:59:00.063376
+[0m16:59:00.063376 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.viviendas_dep
+[0m16:59:00.066376 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:01.061844 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.viviendas_dep"
+[0m16:59:01.062845 [debug] [Thread-1 (]: On model.ipm_departamental.viviendas_dep: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.viviendas_dep"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`viviendas_dep`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__viviendas_dep_add_2018 as (
+SELECT *, 2018 AS FECHA FROM `thinking-pillar-402721`.`viviendas`.`viviendas_dep_2018`
+),  __dbt__cte__viviendas_dep_add_2019 as (
+SELECT *, 2019 AS FECHA FROM `thinking-pillar-402721`.`viviendas`.`viviendas_dep_2019`
+),  __dbt__cte__viviendas_dep_add_2020 as (
+SELECT *, 2020 AS FECHA FROM `thinking-pillar-402721`.`viviendas`.`viviendas_dep_2020`
+),  __dbt__cte__viviendas_dep_add_2021 as (
+SELECT *, 2021 AS FECHA FROM `thinking-pillar-402721`.`viviendas`.`viviendas_dep_2021`
+),  __dbt__cte__viviendas_dep_add_2022 as (
+SELECT *, 2022 AS FECHA FROM `thinking-pillar-402721`.`viviendas`.`viviendas_dep_2022`
+) SELECT * FROM __dbt__cte__viviendas_dep_add_2018
+UNION ALL
+SELECT * FROM __dbt__cte__viviendas_dep_add_2019
+UNION ALL
+SELECT * FROM __dbt__cte__viviendas_dep_add_2020
+UNION ALL
+SELECT * FROM __dbt__cte__viviendas_dep_add_2021
+UNION ALL
+SELECT * FROM __dbt__cte__viviendas_dep_add_2022
+    );
+  
+[0m16:59:01.564298 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:5ef2f5f7-c9e2-4039-a20f-6c2e5dbd88f0&page=queryresults
+[0m16:59:04.905302 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.viviendas_dep (execute): 16:59:00.064380 => 16:59:04.905302
+[0m16:59:04.906304 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816738E0>]}
+[0m16:59:04.906304 [info ] [Thread-1 (]: 9 of 15 OK created sql table model tablas_dep.viviendas_dep .................... [[32mCREATE TABLE (446.1k rows, 27.2 MiB processed)[0m in 4.85s]
+[0m16:59:04.907303 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.viviendas_dep
+[0m16:59:04.908368 [debug] [Thread-1 (]: Began running node model.ipm_departamental.hogares_dep
+[0m16:59:04.908368 [info ] [Thread-1 (]: 10 of 15 START sql table model tablas_dep.hogares_dep .......................... [RUN]
+[0m16:59:04.909378 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.viviendas_dep, now model.ipm_departamental.hogares_dep)
+[0m16:59:04.910375 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.hogares_dep
+[0m16:59:04.925194 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.hogares_dep"
+[0m16:59:04.926193 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep (compile): 16:59:04.910375 => 16:59:04.926193
+[0m16:59:04.927196 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.hogares_dep
+[0m16:59:04.929213 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:05.927092 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.hogares_dep"
+[0m16:59:05.928096 [debug] [Thread-1 (]: On model.ipm_departamental.hogares_dep: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.hogares_dep"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`hogares_dep`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__hogares_dep_add_2021 as (
+SELECT *, 2021 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2021`
+),  __dbt__cte__hogares_dep_add_2022 as (
+SELECT *, 2022 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2022`
+) SELECT PERIODO, DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, P5010, P8526, P8530, fex_c, REGION, DEPARTAMENTO, personas, paredes, pisos, alcantarillado, acueducto, empleo_formal, desempleo_larga_duracion, barreras_acceso_salud, aseguramiento_salud, trabajo_infantil, atencion_integral, inasistencia_escolar, rezago_escolar, alfabetismo, logro_educativo, hacinamiento, pobre, fexp, ipm, FECHA
+FROM `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2018`
+UNION ALL
+SELECT PERIODO, DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, P5010, P8526, P8530, fex_c, REGION, DEPARTAMENTO, personas, paredes, pisos, alcantarillado, acueducto, empleo_formal, desempleo_larga_duracion, barreras_acceso_salud, aseguramiento_salud, trabajo_infantil, atencion_integral, inasistencia_escolar, rezago_escolar, alfabetismo, logro_educativo, hacinamiento, pobre, fexp, ipm, FECHA
+FROM `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2019`
+UNION ALL
+SELECT PERIODO, DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, P5010, P8526, P8530, fex_c, REGION, DEPARTAMENTO, personas, paredes, pisos, alcantarillado, acueducto, empleo_formal, desempleo_larga_duracion, barreras_acceso_salud, aseguramiento_salud, trabajo_infantil, atencion_integral, inasistencia_escolar, rezago_escolar, alfabetismo, logro_educativo, hacinamiento, pobre, fexp, ipm, FECHA
+FROM `thinking-pillar-402721`.`tablas_dep`.`hogaresDepIpm2020`
+UNION ALL
+SELECT PERIODO, DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, P5010, P8526, P8530, fex_c, REGION, DEPARTAMENTO, personas, paredes, pisos, alcantarillado, acueducto, empleo_formal, desempleo_larga_duracion, barreras_acceso_salud, aseguramiento_salud, trabajo_infantil, atencion_integral, inasistencia_escolar, rezago_escolar, alfabetismo, logro_educativo, hacinamiento, pobre, fexp, ipm, FECHA
+FROM __dbt__cte__hogares_dep_add_2021
+UNION ALL
+SELECT PERIODO, DIRECTORIO, SECUENCIA_ENCUESTA, SECUENCIA_P, P5010, P8526, P8530, fex_c, REGION, DEPARTAMENTO, personas, paredes, pisos, alcantarillado, acueducto, empleo_formal, desempleo_larga_duracion, barreras_acceso_salud, aseguramiento_salud, trabajo_infantil, atencion_integral, inasistencia_escolar, rezago_escolar, alfabetismo, logro_educativo, hacinamiento, pobre, fexp, ipm, FECHA
+FROM __dbt__cte__hogares_dep_add_2022
+    );
+  
+[0m16:59:06.429541 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:5dafdeca-0e36-4082-9318-7c8f3cb88573&page=queryresults
+[0m16:59:12.701535 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.hogares_dep (execute): 16:59:04.927702 => 16:59:12.701535
+[0m16:59:12.702572 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816D23B0>]}
+[0m16:59:12.702572 [info ] [Thread-1 (]: 10 of 15 OK created sql table model tablas_dep.hogares_dep ..................... [[32mCREATE TABLE (449.4k rows, 101.5 MiB processed)[0m in 7.79s]
+[0m16:59:12.703578 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.hogares_dep
+[0m16:59:12.704578 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_dep
+[0m16:59:12.704578 [info ] [Thread-1 (]: 11 of 15 START sql table model tablas_dep.personas_dep ......................... [RUN]
+[0m16:59:12.705613 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.hogares_dep, now model.ipm_departamental.personas_dep)
+[0m16:59:12.705613 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_dep
+[0m16:59:12.709636 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_dep"
+[0m16:59:12.710633 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep (compile): 16:59:12.705613 => 16:59:12.710633
+[0m16:59:12.710633 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personas_dep
+[0m16:59:12.717172 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:13.701793 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personas_dep"
+[0m16:59:13.703107 [debug] [Thread-1 (]: On model.ipm_departamental.personas_dep: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personas_dep"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personas_dep`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+SELECT * FROM `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2018`
+UNION ALL
+SELECT * FROM `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2019`
+UNION ALL
+SELECT * FROM `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2020`
+UNION ALL
+SELECT * FROM `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2021`
+UNION ALL
+SELECT * FROM `thinking-pillar-402721`.`tablas_dep`.`personasCamposNulos2022`
+    );
+  
+[0m16:59:14.185247 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:51507e91-9a04-4ba3-a199-2f9f29e61ebf&page=queryresults
+[0m16:59:18.392515 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_dep (execute): 16:59:12.711633 => 16:59:18.392515
+[0m16:59:18.393520 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7827AB940>]}
+[0m16:59:18.393520 [info ] [Thread-1 (]: 11 of 15 OK created sql table model tablas_dep.personas_dep .................... [[32mCREATE TABLE (1.3m rows, 149.9 MiB processed)[0m in 5.69s]
+[0m16:59:18.394522 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_dep
+[0m16:59:18.395558 [debug] [Thread-1 (]: Began running node model.ipm_departamental.relacionViviendas
+[0m16:59:18.395558 [info ] [Thread-1 (]: 12 of 15 START sql table model tablas_dep.relacionViviendas .................... [RUN]
+[0m16:59:18.397064 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.personas_dep, now model.ipm_departamental.relacionViviendas)
+[0m16:59:18.397064 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.relacionViviendas
+[0m16:59:18.400579 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.relacionViviendas"
+[0m16:59:18.401580 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionViviendas (compile): 16:59:18.397064 => 16:59:18.400579
+[0m16:59:18.401580 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.relacionViviendas
+[0m16:59:18.403579 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:19.405497 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.relacionViviendas"
+[0m16:59:19.406498 [debug] [Thread-1 (]: On model.ipm_departamental.relacionViviendas: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.relacionViviendas"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`relacionViviendas`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+SELECT
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) AS DIRECTORIO,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) AS SECUENCIA_ENCUESTA,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) AS SECUENCIA_P,
+    COUNT(CASE WHEN P3 IS NULL THEN 1 END) AS P3,
+    COUNT(CASE WHEN P4005 IS NULL THEN 1 END) AS P4005,
+    COUNT(CASE WHEN P4015 IS NULL THEN 1 END) AS P4015,
+    COUNT(CASE WHEN P8520S3 IS NULL THEN 1 END) AS P8520S3,
+    COUNT(CASE WHEN P8520S5 IS NULL THEN 1 END) AS P8520S5,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) AS FECHA,
+    COUNT(*) AS total_filas
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`viviendas_dep`
+
+UNION ALL
+
+SELECT
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) / COUNT(*) AS DIRECTORIO_div_total,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_ENCUESTA_div_total,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_P_div_total,
+    COUNT(CASE WHEN P3 IS NULL THEN 1 END) / COUNT(*) AS P3_div_total,
+    COUNT(CASE WHEN P4005 IS NULL THEN 1 END) / COUNT(*) AS P4005_div_total,
+    COUNT(CASE WHEN P4015 IS NULL THEN 1 END) / COUNT(*) AS P4015_div_total,
+    COUNT(CASE WHEN P8520S3 IS NULL THEN 1 END) / COUNT(*) AS P8520S3_div_total,
+    COUNT(CASE WHEN P8520S5 IS NULL THEN 1 END) / COUNT(*) AS P8520S5_div_total,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) / COUNT(*) AS FECHA_div_total,
+    1 AS total_div_total
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`viviendas_dep`
+    );
+  
+[0m16:59:20.076634 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:56444614-6c8d-42e9-a23b-a3cac79ca2df&page=queryresults
+[0m16:59:26.710655 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionViviendas (execute): 16:59:18.401580 => 16:59:26.710655
+[0m16:59:26.711654 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C782770A90>]}
+[0m16:59:26.712688 [info ] [Thread-1 (]: 12 of 15 OK created sql table model tablas_dep.relacionViviendas ............... [[32mCREATE TABLE (2.0 rows, 30.6 MiB processed)[0m in 8.32s]
+[0m16:59:26.713688 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.relacionViviendas
+[0m16:59:26.713688 [debug] [Thread-1 (]: Began running node model.ipm_departamental.relacionHogares
+[0m16:59:26.714761 [info ] [Thread-1 (]: 13 of 15 START sql table model tablas_dep.relacionHogares ...................... [RUN]
+[0m16:59:26.715688 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.relacionViviendas, now model.ipm_departamental.relacionHogares)
+[0m16:59:26.715688 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.relacionHogares
+[0m16:59:26.719229 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.relacionHogares"
+[0m16:59:26.720228 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionHogares (compile): 16:59:26.715688 => 16:59:26.719229
+[0m16:59:26.720228 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.relacionHogares
+[0m16:59:26.722735 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:27.693556 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.relacionHogares"
+[0m16:59:27.694555 [debug] [Thread-1 (]: On model.ipm_departamental.relacionHogares: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.relacionHogares"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`relacionHogares`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+-- no me parecio necesario dividirlo en 2
+--5.1
+SELECT
+    COUNT(CASE WHEN PERIODO IS NULL THEN 1 END) AS PERIODO,
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) AS DIRECTORIO,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) AS SECUENCIA_ENCUESTA,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) AS SECUENCIA_P,
+    COUNT(CASE WHEN P5010 IS NULL THEN 1 END) AS P5010,
+    COUNT(CASE WHEN P8526 IS NULL THEN 1 END) AS P8526,
+    COUNT(CASE WHEN P8530 IS NULL THEN 1 END) AS P8530,
+    COUNT(CASE WHEN fex_c IS NULL THEN 1 END) AS fex_c,
+    COUNT(CASE WHEN REGION IS NULL THEN 1 END) AS REGION,
+    COUNT(CASE WHEN DEPARTAMENTO IS NULL THEN 1 END) AS DEPARTAMENTO,
+    COUNT(CASE WHEN personas IS NULL THEN 1 END) AS personas,
+    COUNT(CASE WHEN paredes IS NULL THEN 1 END) AS paredes,
+    COUNT(CASE WHEN pisos IS NULL THEN 1 END) AS pisos,
+    COUNT(CASE WHEN alcantarillado IS NULL THEN 1 END) AS alcantarillado,
+    COUNT(CASE WHEN acueducto IS NULL THEN 1 END) AS acueducto,
+    COUNT(CASE WHEN empleo_formal IS NULL THEN 1 END) AS empleo_formal,
+    COUNT(CASE WHEN desempleo_larga_duracion IS NULL THEN 1 END) AS desempleo_larga_duracion,
+    COUNT(CASE WHEN barreras_acceso_salud IS NULL THEN 1 END) AS barreras_acceso_salud,
+    COUNT(CASE WHEN aseguramiento_salud IS NULL THEN 1 END) AS aseguramiento_salud,
+    COUNT(CASE WHEN trabajo_infantil IS NULL THEN 1 END) AS trabajo_infantil,
+    COUNT(CASE WHEN atencion_integral IS NULL THEN 1 END) AS atencion_integral,
+    COUNT(CASE WHEN inasistencia_escolar IS NULL THEN 1 END) AS inasistencia_escolar,
+    COUNT(CASE WHEN rezago_escolar IS NULL THEN 1 END) AS rezago_escolar,
+    COUNT(CASE WHEN alfabetismo IS NULL THEN 1 END) AS alfabetismo,
+    COUNT(CASE WHEN logro_educativo IS NULL THEN 1 END) AS logro_educativo,
+    COUNT(CASE WHEN hacinamiento IS NULL THEN 1 END) AS hacinamiento,
+    COUNT(CASE WHEN ipm IS NULL THEN 1 END) AS ipm,
+    COUNT(CASE WHEN pobre IS NULL THEN 1 END) AS pobre,
+    COUNT(CASE WHEN fexp IS NULL THEN 1 END) AS fexp,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) AS FECHA,
+    COUNT(*) AS total_filas
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`hogares_dep`
+UNION ALL
+SELECT
+    COUNT(CASE WHEN PERIODO IS NULL THEN 1 END) / COUNT(*) AS PERIODO_div_total,
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) / COUNT(*) AS DIRECTORIO_div_total,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_ENCUESTA_div_total,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_P_div_total,
+    COUNT(CASE WHEN P5010 IS NULL THEN 1 END) / COUNT(*) AS P5010_div_total,
+    COUNT(CASE WHEN P8526 IS NULL THEN 1 END) / COUNT(*) AS P8526_div_total,
+    COUNT(CASE WHEN P8530 IS NULL THEN 1 END) / COUNT(*) AS P8530_div_total,
+    COUNT(CASE WHEN fex_c IS NULL THEN 1 END) / COUNT(*) AS fex_c_div_total,
+    COUNT(CASE WHEN REGION IS NULL THEN 1 END) / COUNT(*) AS REGION_div_total,
+    COUNT(CASE WHEN DEPARTAMENTO IS NULL THEN 1 END) / COUNT(*) AS DEPARTAMENTO_div_total,
+    COUNT(CASE WHEN personas IS NULL THEN 1 END) / COUNT(*) AS personas_div_total,
+    COUNT(CASE WHEN paredes IS NULL THEN 1 END) / COUNT(*) AS paredes_div_total,
+    COUNT(CASE WHEN pisos IS NULL THEN 1 END) / COUNT(*) AS pisos_div_total,
+    COUNT(CASE WHEN alcantarillado IS NULL THEN 1 END) / COUNT(*) AS alcantarillado_div_total,
+    COUNT(CASE WHEN acueducto IS NULL THEN 1 END) / COUNT(*) AS acueducto_div_total,
+    COUNT(CASE WHEN empleo_formal IS NULL THEN 1 END) / COUNT(*) AS empleo_formal_div_total,
+    COUNT(CASE WHEN desempleo_larga_duracion IS NULL THEN 1 END) / COUNT(*) AS desempleo_larga_duracion_div_total,
+    COUNT(CASE WHEN barreras_acceso_salud IS NULL THEN 1 END) / COUNT(*) AS barreras_acceso_salud_div_total,
+    COUNT(CASE WHEN aseguramiento_salud IS NULL THEN 1 END) / COUNT(*) AS aseguramiento_salud_div_total,
+    COUNT(CASE WHEN trabajo_infantil IS NULL THEN 1 END) / COUNT(*) AS trabajo_infantil_div_total,
+    COUNT(CASE WHEN atencion_integral IS NULL THEN 1 END) / COUNT(*) AS atencion_integral_div_total,
+    COUNT(CASE WHEN inasistencia_escolar IS NULL THEN 1 END) / COUNT(*) AS inasistencia_escolar_div_total,
+    COUNT(CASE WHEN rezago_escolar IS NULL THEN 1 END) / COUNT(*) AS rezago_escolar_div_total,
+    COUNT(CASE WHEN alfabetismo IS NULL THEN 1 END) / COUNT(*) AS alfabetismo_div_total,
+    COUNT(CASE WHEN logro_educativo IS NULL THEN 1 END) / COUNT(*) AS logro_educativo_div_total,
+    COUNT(CASE WHEN hacinamiento IS NULL THEN 1 END) / COUNT(*) AS hacinamiento_div_total,
+    COUNT(CASE WHEN ipm IS NULL THEN 1 END) / COUNT(*) AS ipm_div_total,
+    COUNT(CASE WHEN pobre IS NULL THEN 1 END) / COUNT(*) AS pobre_div_total,
+    COUNT(CASE WHEN fexp IS NULL THEN 1 END) / COUNT(*) AS fexp_div_total,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) / COUNT(*) AS FECHA_div_total,
+    1 AS total_div_total
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`hogares_dep`
+    );
+  
+[0m16:59:28.213825 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:2e6e5cd8-8e9b-4d07-8b97-17b8a6ecbbf3&page=queryresults
+[0m16:59:31.230849 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionHogares (execute): 16:59:26.720228 => 16:59:31.230849
+[0m16:59:31.232267 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C782770190>]}
+[0m16:59:31.232850 [info ] [Thread-1 (]: 13 of 15 OK created sql table model tablas_dep.relacionHogares ................. [[32mCREATE TABLE (2.0 rows, 102.8 MiB processed)[0m in 4.52s]
+[0m16:59:31.233850 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.relacionHogares
+[0m16:59:31.233850 [debug] [Thread-1 (]: Began running node model.ipm_departamental.data_sabe_leerescribir_promedio
+[0m16:59:31.234849 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.relacionHogares, now model.ipm_departamental.data_sabe_leerescribir_promedio)
+[0m16:59:31.234849 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.data_sabe_leerescribir_promedio
+[0m16:59:31.238361 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.data_sabe_leerescribir_promedio"
+[0m16:59:31.239400 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.data_sabe_leerescribir_promedio (compile): 16:59:31.235849 => 16:59:31.239400
+[0m16:59:31.240401 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.data_sabe_leerescribir_promedio
+[0m16:59:31.240401 [debug] [Thread-1 (]: Began running node model.ipm_departamental.relacionPersonas
+[0m16:59:31.241401 [info ] [Thread-1 (]: 14 of 15 START sql table model tablas_dep.relacionPersonas ..................... [RUN]
+[0m16:59:31.242402 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.data_sabe_leerescribir_promedio, now model.ipm_departamental.relacionPersonas)
+[0m16:59:31.242402 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.relacionPersonas
+[0m16:59:31.251435 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.relacionPersonas"
+[0m16:59:31.252436 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionPersonas (compile): 16:59:31.243402 => 16:59:31.252436
+[0m16:59:31.253436 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.relacionPersonas
+[0m16:59:31.306209 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:32.302584 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.relacionPersonas"
+[0m16:59:32.303585 [debug] [Thread-1 (]: On model.ipm_departamental.relacionPersonas: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.relacionPersonas"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`relacionPersonas`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+SELECT
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) AS DIRECTORIO,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) AS SECUENCIA_ENCUESTA,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) AS SECUENCIA_P,
+    COUNT(CASE WHEN ORDEN IS NULL THEN 1 END) AS ORDEN,
+    COUNT(CASE WHEN P6020 IS NULL THEN 1 END) AS P6020,
+    COUNT(CASE WHEN P6040 IS NULL THEN 1 END) AS P6040,
+    COUNT(CASE WHEN fex_c IS NULL THEN 1 END) AS fex_c,
+    COUNT(CASE WHEN P6051 IS NULL THEN 1 END) AS P6051,
+    COUNT(CASE WHEN P6090 IS NULL THEN 1 END) AS P6090,
+    COUNT(CASE WHEN P5665 IS NULL THEN 1 END) AS P5665,
+    COUNT(CASE WHEN P8563 IS NULL THEN 1 END) AS P8563,
+    COUNT(CASE WHEN P51 IS NULL THEN 1 END) AS P51,
+    COUNT(CASE WHEN P55 IS NULL THEN 1 END) AS P55,
+    COUNT(CASE WHEN P774 IS NULL THEN 1 END) AS P774,
+    COUNT(CASE WHEN P6160 IS NULL THEN 1 END) AS P6160,
+    COUNT(CASE WHEN P8586 IS NULL THEN 1 END) AS P8586,
+    COUNT(CASE WHEN P8587 IS NULL THEN 1 END) AS P8587,
+    COUNT(CASE WHEN P8587S1 IS NULL THEN 1 END) AS P8587S1,
+    COUNT(CASE WHEN P1088 IS NULL THEN 1 END) AS P1088,
+    COUNT(CASE WHEN P1088S1 IS NULL THEN 1 END) AS P1088S1,
+    COUNT(CASE WHEN P6180 IS NULL THEN 1 END) AS P6180,
+    COUNT(CASE WHEN P6240 IS NULL THEN 1 END) AS P6240,
+    COUNT(CASE WHEN P6250 IS NULL THEN 1 END) AS P6250,
+    COUNT(CASE WHEN P6260 IS NULL THEN 1 END) AS P6260,
+    COUNT(CASE WHEN P6270 IS NULL THEN 1 END) AS P6270,
+    COUNT(CASE WHEN P6351 IS NULL THEN 1 END) AS P6351,
+    COUNT(CASE WHEN P6390 IS NULL THEN 1 END) AS P6390,
+    COUNT(CASE WHEN P7250 IS NULL THEN 1 END) AS P7250,
+    COUNT(CASE WHEN P6920 IS NULL THEN 1 END) AS P6920,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) AS FECHA
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`personas_dep`
+
+UNION ALL
+SELECT
+    COUNT(CASE WHEN DIRECTORIO IS NULL THEN 1 END) / COUNT(*) AS DIRECTORIO_div_total,
+    COUNT(CASE WHEN SECUENCIA_ENCUESTA IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_ENCUESTA_div_total,
+    COUNT(CASE WHEN SECUENCIA_P IS NULL THEN 1 END) / COUNT(*) AS SECUENCIA_P_div_total,
+    COUNT(CASE WHEN ORDEN IS NULL THEN 1 END) / COUNT(*) AS ORDEN_div_total,
+    COUNT(CASE WHEN P6020 IS NULL THEN 1 END) / COUNT(*) AS P6020_div_total,
+    COUNT(CASE WHEN P6040 IS NULL THEN 1 END) / COUNT(*) AS P6040_div_total,
+    COUNT(CASE WHEN fex_c IS NULL THEN 1 END) / COUNT(*) AS fex_c_div_total,
+    COUNT(CASE WHEN P6051 IS NULL THEN 1 END) / COUNT(*) AS P6051_div_total,
+    COUNT(CASE WHEN P6090 IS NULL THEN 1 END) / COUNT(*) AS P6090_div_total,
+    COUNT(CASE WHEN P5665 IS NULL THEN 1 END) / COUNT(*) AS P5665_div_total,
+    COUNT(CASE WHEN P8563 IS NULL THEN 1 END) / COUNT(*) AS P8563_div_total,
+    COUNT(CASE WHEN P51 IS NULL THEN 1 END) / COUNT(*) AS P51_div_total,
+    COUNT(CASE WHEN P55 IS NULL THEN 1 END) / COUNT(*) AS P55_div_total,
+    COUNT(CASE WHEN P774 IS NULL THEN 1 END) / COUNT(*) AS P774_div_total,
+    COUNT(CASE WHEN P6160 IS NULL THEN 1 END) / COUNT(*) AS P6160_div_total,
+    COUNT(CASE WHEN P8586 IS NULL THEN 1 END) / COUNT(*) AS P8586_div_total,
+    COUNT(CASE WHEN P8587 IS NULL THEN 1 END) / COUNT(*) AS P8587_div_total,
+    COUNT(CASE WHEN P8587S1 IS NULL THEN 1 END) / COUNT(*) AS P8587S1_div_total,
+    COUNT(CASE WHEN P1088 IS NULL THEN 1 END) / COUNT(*) AS P1088_div_total,
+    COUNT(CASE WHEN P1088S1 IS NULL THEN 1 END) / COUNT(*) AS P1088S1_div_total,
+    COUNT(CASE WHEN P6180 IS NULL THEN 1 END) / COUNT(*) AS P6180_div_total,
+    COUNT(CASE WHEN P6240 IS NULL THEN 1 END) / COUNT(*) AS P6240_div_total,
+    COUNT(CASE WHEN P6250 IS NULL THEN 1 END) / COUNT(*) AS P6250_div_total,
+    COUNT(CASE WHEN P6260 IS NULL THEN 1 END) / COUNT(*) AS P6260_div_total,
+    COUNT(CASE WHEN P6270 IS NULL THEN 1 END) / COUNT(*) AS P6270_div_total,
+    COUNT(CASE WHEN P6351 IS NULL THEN 1 END) / COUNT(*) AS P6351_div_total,
+    COUNT(CASE WHEN P6390 IS NULL THEN 1 END) / COUNT(*) AS P6390_div_total,
+    COUNT(CASE WHEN P7250 IS NULL THEN 1 END) / COUNT(*) AS P7250_div_total,
+    COUNT(CASE WHEN P6920 IS NULL THEN 1 END) / COUNT(*) AS P6920_div_total,
+    COUNT(CASE WHEN FECHA IS NULL THEN 1 END) / COUNT(*) AS FECHA_div_total
+FROM
+    `thinking-pillar-402721`.`tablas_dep`.`personas_dep`
+    );
+  
+[0m16:59:32.702649 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:7a85ec87-5612-4971-80f3-a7b39eb57cfc&page=queryresults
+[0m16:59:35.444197 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.relacionPersonas (execute): 16:59:31.253436 => 16:59:35.444197
+[0m16:59:35.445196 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7827D3B80>]}
+[0m16:59:35.446197 [info ] [Thread-1 (]: 14 of 15 OK created sql table model tablas_dep.relacionPersonas ................ [[32mCREATE TABLE (2.0 rows, 149.9 MiB processed)[0m in 4.20s]
+[0m16:59:35.447202 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.relacionPersonas
+[0m16:59:35.447712 [debug] [Thread-1 (]: Began running node model.ipm_departamental.row_id_added
+[0m16:59:35.448221 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.relacionPersonas, now model.ipm_departamental.row_id_added)
+[0m16:59:35.448221 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.row_id_added
+[0m16:59:35.452334 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.row_id_added"
+[0m16:59:35.452334 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.row_id_added (compile): 16:59:35.449232 => 16:59:35.452334
+[0m16:59:35.453348 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.row_id_added
+[0m16:59:35.454347 [debug] [Thread-1 (]: Began running node model.ipm_departamental.median_
+[0m16:59:35.455347 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.row_id_added, now model.ipm_departamental.median_)
+[0m16:59:35.455347 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.median_
+[0m16:59:35.461361 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.median_"
+[0m16:59:35.462195 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.median_ (compile): 16:59:35.456347 => 16:59:35.462195
+[0m16:59:35.462195 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.median_
+[0m16:59:35.463262 [debug] [Thread-1 (]: Began running node model.ipm_departamental.personas_imp
+[0m16:59:35.464261 [info ] [Thread-1 (]: 15 of 15 START sql table model tablas_dep.personas_imp ......................... [RUN]
+[0m16:59:35.465268 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ipm_departamental.median_, now model.ipm_departamental.personas_imp)
+[0m16:59:35.465268 [debug] [Thread-1 (]: Began compiling node model.ipm_departamental.personas_imp
+[0m16:59:35.469290 [debug] [Thread-1 (]: Writing injected SQL for node "model.ipm_departamental.personas_imp"
+[0m16:59:35.470292 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_imp (compile): 16:59:35.465268 => 16:59:35.469290
+[0m16:59:35.470292 [debug] [Thread-1 (]: Began executing node model.ipm_departamental.personas_imp
+[0m16:59:35.472292 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:59:36.425537 [debug] [Thread-1 (]: Writing runtime sql for node "model.ipm_departamental.personas_imp"
+[0m16:59:36.426535 [debug] [Thread-1 (]: On model.ipm_departamental.personas_imp: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt-proyectoMineria", "target_name": "dev", "node_id": "model.ipm_departamental.personas_imp"} */
+
+  
+    
+
+    create or replace table `thinking-pillar-402721`.`tablas_dep`.`personas_imp`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+with __dbt__cte__data_sabe_leerescribir_promedio as (
+SELECT P6920, COUNT(*) OVER() AS cantidad
+FROM `thinking-pillar-402721`.`tablas_dep`.`personas_dep`
+WHERE P6920 IS NOT NULL
+ORDER BY P6920
+),  __dbt__cte__row_id_added as (
+SELECT *, ROW_NUMBER() OVER () AS row_id
+FROM  __dbt__cte__data_sabe_leerescribir_promedio
+),  __dbt__cte__median_ as (
+SELECT
+    CASE
+        WHEN MOD(cantidad, 2) = 0 THEN (SELECT AVG(CAST(P6920 AS INT64)) FROM __dbt__cte__row_id_added WHERE row_id BETWEEN cantidad/2 AND cantidad/2+1)
+        ELSE (SELECT CAST(P6920 AS INT64) FROM __dbt__cte__row_id_added WHERE row_id = ROUND(cantidad/2))
+    END AS median
+    FROM __dbt__cte__row_id_added
+    LIMIT 1
+) SELECT * EXCEPT(P6920, median), IFNULL(CAST(P6920 AS INT64), median) as P6920
+FROM `thinking-pillar-402721`.`tablas_dep`.`personas_dep`, __dbt__cte__median_
+    );
+  
+[0m16:59:36.809168 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=thinking-pillar-402721&j=bq:US:9ba59f21-3bcf-4c52-aea0-b6056088ab07&page=queryresults
+[0m16:59:43.134109 [debug] [Thread-1 (]: Timing info for model.ipm_departamental.personas_imp (execute): 16:59:35.471292 => 16:59:43.134109
+[0m16:59:43.135106 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ab7cfbd-ddc4-4545-b216-d85f04783845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7827BD4E0>]}
+[0m16:59:43.136106 [info ] [Thread-1 (]: 15 of 15 OK created sql table model tablas_dep.personas_imp .................... [[32mCREATE TABLE (1.3m rows, 149.9 MiB processed)[0m in 7.67s]
+[0m16:59:43.137107 [debug] [Thread-1 (]: Finished running node model.ipm_departamental.personas_imp
+[0m16:59:43.138540 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:59:43.138540 [debug] [MainThread]: Connection 'list_thinking-pillar-402721' was properly closed.
+[0m16:59:43.138540 [debug] [MainThread]: Connection 'list_thinking-pillar-402721_tablas_dep' was properly closed.
+[0m16:59:43.139550 [debug] [MainThread]: Connection 'model.ipm_departamental.personas_imp' was properly closed.
+[0m16:59:43.139550 [info ] [MainThread]: 
+[0m16:59:43.140546 [info ] [MainThread]: Finished running 15 table models in 0 hours 1 minutes and 31.43 seconds (91.43s).
+[0m16:59:43.143640 [debug] [MainThread]: Command end result
+[0m16:59:43.158215 [info ] [MainThread]: 
+[0m16:59:43.159285 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:59:43.159285 [info ] [MainThread]: 
+[0m16:59:43.160286 [info ] [MainThread]: Done. PASS=15 WARN=0 ERROR=0 SKIP=0 TOTAL=15
+[0m16:59:43.161289 [debug] [MainThread]: Command `dbt run` succeeded at 16:59:43.161289 after 92.31 seconds
+[0m16:59:43.162289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7FD7473D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7811A55D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7816EB280>]}
+[0m16:59:43.162289 [debug] [MainThread]: Flushing usage events
