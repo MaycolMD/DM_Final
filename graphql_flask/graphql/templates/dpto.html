@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>IPM: Colombia</title>
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #c7ecee; /* Color de fondo */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .info-graph {
+            background-color: #ffffff; /* Color de fondo del cuadro de información */
+            border: 1px solid #95afc0; /* Borde del cuadro de información */
+            border-radius: 5px; /* Borde redondeado del cuadro de información */
+            padding: 20px; /* Espaciado interno del cuadro de información */
+            margin-top: 20px; /* Margen superior del cuadro de información */
+            text-align: center;
+            overflow: auto; /* Agregado para permitir el desplazamiento si la gráfica es grande */
+        }
+
+        .info-box {
+            background-color: #95afc0; /* Color de fondo del cuadro de información */
+            border: 1px solid #95afc0; /* Borde del cuadro de información */
+            border-radius: 5px; /* Borde redondeado del cuadro de información */
+            padding: 15px; /* Espaciado interno del cuadro de información */
+            margin-top: 20px; /* Margen superior del cuadro de información */
+            text-align: center;
+        }
+
+        .departamento-title {
+        font-size: 34px;
+        font-weight: bold;
+        color: #030b0f; /* Color azul, puedes ajustarlo según tus preferencias */
+        margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h2 class="text-center mb-4" style="margin-top: 20px;">Incidencia para el cálculo del IPM en los Hogares de Colombia</h2>
+
+            <!-- Contenedor para la gráfica -->
+            <div class="info-graph mx-auto">
+                <h3 class="text-center departamento-title">{{ name }}</h3>
+                <img src={{url}} alt="Chart" class="img-fluid">
+            </div>
+
+            <!-- Información sobre la gráfica -->
+            <div class="row mt-4">
+                <!-- Primera columna -->
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <p>
+                            <h4>Interpretación de la Gráfica</h4>
+                            <div class="info-box">
+                                <p>
+                                    El IPM se calcula computando todas estas variables y su incidencia, y la suma total es normalizada a 1. Por ejemplo, si la barra "Paredes" es alta, indica
+                                    que la privación por no tener paredes adecuadas en el hogar ha tenido un impacto significativo en el cálculo del IPM. De esta manera, la gráfica proporciona
+                                    una visualización clara de las privaciones que contribuyen al índice de pobreza multidimensional en ese hogar.
+                                </p>
+                                <div class="info-box">
+                                    <h4>Significado de las Variables</h4>
+                                    <ul>
+                                        <li><strong>Barreras Acceso Salud:</strong> Indica privación en el acceso a servicios de salud.</li>
+                                        <li><strong>Trabajo Infantil:</strong> Representa la privación relacionada con el trabajo infantil en el hogar.</li>
+                                        <li><strong>Paredes:</strong> Muestra la privación por la falta de paredes adecuadas en el hogar.</li>
+                                        <li><strong>Inasistencia Escolar:</strong> Refleja la privación asociada con la inasistencia escolar de los miembros del hogar.</li>
+                                        <li><strong>Alcantarillado:</strong> Indica la privación relacionada con la falta de acceso a sistemas de alcantarillado.</li>
+                                        <li><strong>Alfabetismo:</strong> Representa la privación por la falta de alfabetización en el hogar.</li>
+                                        <li><strong>Desempleo Larga Duración:</strong> Muestra la privación vinculada al desempleo sostenido en el hogar.</li>
+                                        <li><strong>Aseguramiento Salud:</strong> Indica la privación en la cobertura de servicios de salud.</li>
+                                        <li><strong>Hacinamiento:</strong> Representa la privación por vivir en condiciones de hacinamiento.</li>
+                                        <li><strong>Atención Integral:</strong> Muestra la privación en la atención integral a la salud en el hogar.</li>
+                                        <li><strong>Pisos:</strong> Indica la privación por la falta de pisos adecuados en el hogar.</li>
+                                        <li><strong>Empleo Formal:</strong> Representa la privación relacionada con la falta de empleo formal en el hogar.</li>
+                                        <li><strong>Acueducto:</strong> Muestra la privación asociada con la falta de acceso a sistemas de acueducto.</li>
+                                        <li><strong>Rezago Escolar:</strong> Indica la privación relacionada con el rezago escolar de los miembros del hogar.</li>
+                                        <li><strong>Logro Educativo:</strong> Representa la privación por la falta de logros educativos en el hogar.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>                            
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Segunda columna -->
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h4>Información</h4>
+                        <p>
+                            La gráfica muestra la incidencia de diversas variables en el hogar, utilizadas en el cálculo del Índice de Pobreza Multidimensional (IPM).
+                            Cada barra representa una característica, como "Barreras Acceso Salud", "Trabajo Infantil", "Paredes", etc. La altura de cada barra indica la magnitud
+                            de la privación asociada a esa variable en el hogar.
+                        </p>
+                        <a class="btn btn-secondary" href="#" role="button">Buscar otro departamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Agregar los scripts de Bootstrap para funcionalidades adicionales (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-oMjX4mejhD9u6IaSMxWCLfC9aUG9S00x6E+D5JcR5LE3SIEBmDeqH9P5zsU/PcNM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFq7kLZLeCrq6p79j1-7U2rt7jizo" crossorigin="anonymous"></script>
+</body>
+
+</html>

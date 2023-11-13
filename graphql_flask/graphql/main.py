@@ -1,16 +1,25 @@
 from flask import Flask, render_template
 import graphene
 import pandas as pd
+
+import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 from query import Query
 
 import mpld3
+import numpy as np
 
 app = Flask(__name__)
 
 # Configuración de GraphQL Schema
 schema = graphene.Schema(query=Query)
+
+@app.route('/')
+def main():
+    return render_template('index.html')
 
 @app.get('/<dpto>')
 def obtener(dpto: str):
@@ -46,26 +55,24 @@ def obtener(dpto: str):
     # Extraer el diccionario de la respuesta GraphQL
     data_dict = result_.data['modelDpto'][0]
     dpto_value = data_dict.pop('dpto', None)
-
-    # Convertir el diccionario en una Serie de Pandas
-    pandas_series = pd.Series(data_dict)
-
+    
     # Establecer un estilo de fondo blanco con bordes de las barras
     sns.set(style="whitegrid")
-
-    # Ajustar el tamaño de la figura
-    plt.figure(figsize=(8, 6))
-
-    # Extraer el diccionario de la respuesta GraphQL
-    data_dict = result_.data['modelDpto'][0]
-
+ 
+    # Crear un gráfico de barras horizontal con un color más agradable
+    fig, ax = plt.subplots(figsize=(12, 9))
+    
     # Convertir el diccionario en una Serie de Pandas
     dpto_importances = pd.Series(data_dict)
     dpto_importances.sort_values(ascending=True, inplace=True)
 
-    # Crear un gráfico de barras horizontal con un color más agradable
-    
-    fig, ax = plt.subplots(figsize=(12, 9))
+    # Agregar etiquetas a las barras
+    for index, value in enumerate(dpto_importances):
+        ax.text(value, index, f'{value:.4f}', ha='left', va='center', fontweight='bold', fontsize=15, color='#333333')
+
+    # Agregar etiquetas a los ejes y título
+    plt.xlabel("Importancia", labelpad=20, weight='bold', size=20)
+    plt.ylabel("Característica", labelpad=20, weight='bold', size=20)
 
     ax.xaxis.grid(False)
     ax.yaxis.grid(False)
@@ -77,27 +84,17 @@ def obtener(dpto: str):
     ax.spines['top'].set_visible(False)
     ax.spines['left'].set_visible(False)
 
-    # Quitar los ticks del eje y
-    ax.tick_params(axis="y", which="both", left="off", right="off")
-
     # Ajustar el espaciado entre las etiquetas
-    plt.subplots_adjust(left=0.2)
     plt.yticks(range(len(dpto_importances)), dpto_importances.index)
 
-    # Agregar etiquetas a las barras
-    for index, value in enumerate(dpto_importances):
-        ax.text(value, index, f'{value:.4f}', ha='left', va='center', fontweight='bold', fontsize=15, color='#333333')
-
-    # Agregar etiquetas a los ejes y título
-    plt.xlabel("Importancia", labelpad=20, weight='bold', size=20)
-    plt.ylabel("Característica", labelpad=20, weight='bold', size=20)
-    plt.title(dpto_value, weight='bold', size=28)
-
-    # Convertir la figura de Matplotlib a un formato HTML que puede ser renderizado en el navegador
+    plt.savefig('./static/images/dpto.png', bbox_inches='tight', dpi=100)
+        # Convertir la figura de Matplotlib a un formato HTML que puede ser renderizado en el navegador
     plot_html = mpld3.fig_to_html(fig)
-    plt.close(fig)
 
-    return render_template('index.html', plot_html=plot_html)
+    plt.close(fig)
+  
+    return render_template('dpto.html', name = dpto_value, url ='/static/images/dpto.png')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
