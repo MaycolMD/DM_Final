@@ -1,10 +1,10 @@
 {{ config (materialized = "table") }}
-SELECT * FROM {{ ref('personas_dep_add_2018') }}
+SELECT * FROM {{ ref('personasCamposNulos2018') }}
 UNION ALL
-SELECT * FROM {{ ref('personas_dep_add_2019') }}
+SELECT * FROM {{ ref('personasCamposNulos2019') }}
 UNION ALL
-SELECT * FROM {{ ref('personas_dep_add_2020') }}
+SELECT * FROM {{ ref('personasCamposNulos2020') }}
 UNION ALL
-SELECT * FROM {{ ref('personas_dep_add_2021') }}
+SELECT * FROM {{ ref('personasCamposNulos2021') }}
 UNION ALL
-SELECT * FROM {{ ref('personas_dep_add_2022') }}
+SELECT * FROM {{ ref('personasCamposNulos2022') }}

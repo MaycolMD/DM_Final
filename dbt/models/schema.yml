@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: hogares
+    database: thinking-pillar-402721
+    tables:
+      - name: hogares_dep_2018
+        description: Tabla de BQ con la información de la pobreza multidimensional en los hogares en 2018. 
+      - name: hogares_dep_2019
+        description: Tabla de BQ con la información de la pobreza multidimensional en los hogares en 2019. 
+      - name: hogares_dep_2020
+        description: Tabla de BQ con la información de la pobreza multidimensional en los hogares en 2020. 
+      - name: hogares_dep_2021
+        description: Tabla de BQ con la información de la pobreza multidimensional en los hogares en 2021. 
+      - name: hogares_dep_2022
+        description: Tabla de BQ con la información de la pobreza multidimensional en los hogares en 2022. 
+
+  - name: personas
+    database: thinking-pillar-402721
+    tables:
+      - name: personas_dep_2018
+        description: Tabla de BQ con la información de la pobreza multidimensional en las personas en 2018. 
+      - name: personas_dep_2019
+        description: Tabla de BQ con la información de la pobreza multidimensional en las personas en 2019. 
+      - name: personas_dep_2020
+        description: Tabla de BQ con la información de la pobreza multidimensional en las personas en 2020. 
+      - name: personas_dep_2021
+        description: Tabla de BQ con la información de la pobreza multidimensional en las personas en 2021. 
+      - name: personas_dep_2022
+        description: Tabla de BQ con la información de la pobreza multidimensional en las personas en 2022. 
+
+  - name: viviendas
+    database: thinking-pillar-402721
+    tables:
+      - name: viviendas_dep_2018
+        description: Tabla de BQ con la información de la pobreza multidimensional en las viviendas en 2018. 
+      - name: viviendas_dep_2019
+        description: Tabla de BQ con la información de la pobreza multidimensional en las viviendas en 2019. 
+      - name: viviendas_dep_2020
+        description: Tabla de BQ con la información de la pobreza multidimensional en las viviendas en 2020. 
+      - name: viviendas_dep_2021
+        description: Tabla de BQ con la información de la pobreza multidimensional en las viviendas en 2021. 
+      - name: viviendas_dep_2022
+        description: Tabla de BQ con la información de la pobreza multidimensional en las viviendas en 2022. 
+
+models:
+  - name: hogares_dep
+    description: "Información conjunta de todos los hogares y su IPM del 2018 al 2022"
+
+  - name: personas_dep
+    description: "Información conjunta de todos los hogares y su IPM del 2018 al 2022"
+
+  - name: viviendas_dep
+    description: "Información conjunta de todos los hogares y su IPM del 2018 al 2022"

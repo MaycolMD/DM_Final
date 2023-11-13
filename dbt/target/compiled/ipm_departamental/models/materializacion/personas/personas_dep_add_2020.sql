@@ -1,0 +1,1 @@
+SELECT *, 2020 AS FECHA FROM `thinking-pillar-402721`.`personas`.`personas_dep_2020`

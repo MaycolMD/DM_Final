@@ -1,0 +1,1 @@
+SELECT *, 2019 AS FECHA FROM `thinking-pillar-402721`.`hogares`.`hogares_dep_2019`
