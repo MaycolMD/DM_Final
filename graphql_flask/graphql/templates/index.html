@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graph Plot</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    {{ plot_html | safe }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>IPM: Colombia</title>
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #c7ecee; /* Color de fondo */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .info-graph {
+            background-color: #ffffff; /* Color de fondo del cuadro de información */
+            border: 1px solid #95afc0; /* Borde del cuadro de información */
+            border-radius: 5px; /* Borde redondeado del cuadro de información */
+            padding: 20px; /* Espaciado interno del cuadro de información */
+            margin-top: 20px; /* Margen superior del cuadro de información */
+            text-align: center;
+            overflow: auto; /* Agregado para permitir el desplazamiento si la gráfica es grande */
+        }
+
+        .info-box {
+            background-color: #95afc0; /* Color de fondo del cuadro de información */
+            border: 1px solid #95afc0; /* Borde del cuadro de información */
+            border-radius: 5px; /* Borde redondeado del cuadro de información */
+            padding: 15px; /* Espaciado interno del cuadro de información */
+            margin-top: 20px; /* Margen superior del cuadro de información */
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Graph Plot</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center mb-4" style="margin-top: 20px;">Incidencia de Variables en un Departamento de Colombia</h2>
+
+                <!-- Contenedor para la gráfica -->
+                <div class="info-graph mx-auto">
+                    {{ plot_html | safe }}
+                </div>
+
+                <!-- Información sobre la gráfica -->
+                <div class="info-box">
+                    <h4>Información sobre la Gráfica</h4>
+                    <p>
+                        Esta gráfica muestra la incidencia de ciertas variables en un departamento de Colombia.
+                        Proporciona una visualización clara de los datos para comprender mejor las tendencias y
+                        patrones relevantes.
+                    </p>
+                    <a class="btn btn-secondary" href="#" role="button">Otro departamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar los scripts de Bootstrap para funcionalidades adicionales (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-oMjX4mejhD9u6IaSMxWCLfC9aUG9S00x6E+D5JcR5LE3SIEBmDeqH9P5zsU/PcNM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFq7kLZLeCrq6p79j1-7U2rt7jizo" crossorigin="anonymous"></script>
 </body>
+
 </html>
