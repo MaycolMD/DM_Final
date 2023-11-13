@@ -22,9 +22,9 @@ para MacOS y Linux
     source venv/bin/activate
 ```
 
-### 4. Ahora, instalamos las dependencias necesarias
+### 4. Ahora, instalamos las dependencias necesarias con el archivo requirements.txt
 ```bash
-    pip install dbt-core dbt-bigquery
+    pip install -r .\requirements.txt
 ```
 
 ### Finalmente, dependiendo de lo que queramos hacer, ejecutamos el comando respectivo
