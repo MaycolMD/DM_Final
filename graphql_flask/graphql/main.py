@@ -21,6 +21,15 @@ schema = graphene.Schema(query=Query)
 def main():
     return render_template('index.html')
 
+@app.route('/consulta')
+def consulta():
+    return render_template('consulta.html')
+
+@app.route('/mapa')
+def mapa():
+    return render_template('mapa.html')
+
+
 @app.get('/<dpto>')
 def obtener(dpto: str):
     dpto_value = dpto
