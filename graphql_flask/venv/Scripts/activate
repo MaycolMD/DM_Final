@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Python\DM_Final\graphql_flask\venv"
+VIRTUAL_ENV="C:\Users\juanc\Documents\Universidad\Semestre 8\Minería de Datos\Final\DM_Final\graphql_flask\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

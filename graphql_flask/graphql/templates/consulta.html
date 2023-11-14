@@ -3,48 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Consulta por Departamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@110&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <title>Consulta por Departamento</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            background-color: #262933; /* Fondo oscuro */
+            color: #fff; /* Texto blanco */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Agregamos estilos para centrar el formulario */
+        .padre {
+            text-align: center;
+        }
+
+        .hijo {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>Consulta por Departamento</h1>
-    <form action="resultado.html" method="get">
-        <label for="departamento">Selecciona un Departamento:</label>
-        <select id="departamento" name="departamento">
-            <option value="Amazonas">Amazonas</option>
-            <option value="Antioquia">Antioquia</option>
-            <option value="Arauca">Arauca</option>
-            <option value="Atlantico">Atlántico</option>
-            <option value="Bolivar">Bolívar</option>
-            <option value="Boyaca">Boyacá</option>
-            <option value="Caldas">Caldas</option>
-            <option value="Caqueta">Caquetá</option>
-            <option value="Casanare">Casanare</option>
-            <option value="Cauca">Cauca</option>
-            <option value="Cesar">Cesar</option>
-            <option value="Choco">Chocó</option>
-            <option value="Cordoba">Córdoba</option>
-            <option value="Cundinamarca">Cundinamarca</option>
-            <option value="Guainia">Guainía</option>
-            <option value="Guaviare">Guaviare</option>
-            <option value="Huila">Huila</option>
-            <option value="La Guajira">La Guajira</option>
-            <option value="Magdalena">Magdalena</option>
-            <option value="Meta">Meta</option>
-            <option value="Narino">Nariño</option>
-            <option value="Norte de Santander">Norte de Santander</option>
-            <option value="Putumayo">Putumayo</option>
-            <option value="Quindio">Quindío</option>
-            <option value="Risaralda">Risaralda</option>
-            <option value="San Andres y Providencia">San Andrés y Providencia</option>
-            <option value="Santander">Santander</option>
-            <option value="Sucre">Sucre</option>
-            <option value="Tolima">Tolima</option>
-            <option value="Valle del Cauca">Valle del Cauca</option>
-            <option value="Vaupes">Vaupés</option>
-            <option value="Vichada">Vichada</option>
-        </select>
-        <button type="submit">Consultar</button>
-    </form>
+    <div class="padre">
+        <div class="hijo">
+            <h1>Consulta por Departamento</h1>
+            <form method="get" action="{{ url_for('obtener', dpto='') }}">
+                <label for="departamento">Selecciona un Departamento:</label>
+                <select id="departamento" name="departamento">
+                    <option value="amazonas">Amazonas</option>
+                    <option value="antioquia">Antioquia</option>
+                    <option value="arauca">Arauca</option>
+                    <option value="atlantico">Atlántico</option>
+                    <option value="bolivar">Bolívar</option>
+                    <option value="boyaca">Boyacá</option>
+                    <option value="caldas">Caldas</option>
+                    <option value="caqueta">Caquetá</option>
+                    <option value="casanare">Casanare</option>
+                    <option value="cauca">Cauca</option>
+                    <option value="cesar">Cesar</option>
+                    <option value="choco">Chocó</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="cundinamarca">Cundinamarca</option>
+                    <option value="guainia">Guainía</option>
+                    <option value="guaviare">Guaviare</option>
+                    <option value="huila">Huila</option>
+                    <option value="la_guajira">La Guajira</option>
+                    <option value="magdalena">Magdalena</option>
+                    <option value="meta">Meta</option>
+                    <option value="narino">Nariño</option>
+                    <option value="norte_de_santander">Norte de Santander</option>
+                    <option value="putumayo">Putumayo</option>
+                    <option value="quindio">Quindío</option>
+                    <option value="risaralda">Risaralda</option>
+                    <option value="san_andres_y_providencia">San Andrés y Providencia</option>
+                    <option value="santander">Santander</option>
+                    <option value="sucre">Sucre</option>
+                    <option value="tolima">Tolima</option>
+                    <option value="valle_del_cauca">Valle del Cauca</option>
+                    <option value="vaupes">Vaupés</option>
+                    <option value="vichada">Vichada</option>
+                </select>                
+                <button type="submit">Consultar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

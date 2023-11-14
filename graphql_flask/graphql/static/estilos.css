@@ -1,0 +1,66 @@
+/* Reset de estilos */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Estilo de fondo oscuro y texto blanco */
+body {
+    background-color: #262933 !important;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Centrar elementos en pantalla */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Estilos para el título grande */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilos para el label pequeño */
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones grandes */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #262933;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

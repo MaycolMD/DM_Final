@@ -30,9 +30,9 @@ def mapa():
     return render_template('mapa.html')
 
 
-@app.get('/<dpto>')
-def obtener(dpto: str):
-    dpto_value = dpto
+@app.route('/dpto', methods=['GET'])
+def obtener():
+    dpto_value = request.args.get('departamento')
 
     print(dpto_value)
 
