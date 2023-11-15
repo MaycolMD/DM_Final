@@ -21,7 +21,7 @@ El conjunto de datos abarca el período comprendido entre 2018 y 2022, permitien
 ## Cómo Iniciar
 Clone el repositorio: 
 ```bash
-    git clone https://github.com/tu-usuario/nombre-del-repo.git
+    git clone https://github.com/MaycolMD/DM_Final.git
 ```
 
 Ubicado en la carpeta graphql_flask, asegúrese de tener las dependencias instaladas: 
