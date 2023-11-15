@@ -19,8 +19,15 @@ El conjunto de datos abarca una amplia variedad de variables relacionadas con ho
 El conjunto de datos abarca el período comprendido entre 2018 y 2022, permitiendo un análisis a lo largo de múltiples años para identificar tendencias y patrones.
 
 ## Cómo Iniciar
-Clone el repositorio: git clone https://github.com/tu-usuario/nombre-del-repo.git
-Asegúrese de tener las dependencias instaladas: pip install -r requirements.txt
+Clone el repositorio: 
+```bash
+    git clone https://github.com/tu-usuario/nombre-del-repo.git
+```
+
+Ubicado en la carpeta graphql_flask, asegúrese de tener las dependencias instaladas: 
+```bash
+    pip install -r requirements.txt
+```
 
 Ubicado en la carpeta graphql_flask/graphql, Ejecute la aplicación Flask: 
 ```bash
