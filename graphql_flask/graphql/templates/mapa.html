@@ -41,13 +41,16 @@
 </head>
 <body>
     <div class="contenedor-imagen">
-        <iframe id="interactive-map" src="{{ url_for('static', filename='map.html') }}" height="800" width="700"></iframe>
+        <iframe id="interactive-map" src="{{ url_for('static', filename='map.html') }}" height="800" width="1200"></iframe>
     </div>
     <div class="contenedor-leyenda">
         <img src="{{ url_for('static', filename='images/Leyenda.png') }}" alt="Leyenda">
     </div>
-    <a href="/">Volver a la Página Principal</a>
 
+    <div class="text-center">
+        <a class="btn btn-secondary" href="/consulta" role="button">Buscar otro departamento</a>
+        <a class="btn btn-secondary" href="/mapa" role="button">Ver el mapa</a>
+    </div>
     <script>
         document.getElementById('interactive-map').onload = function() {
             var iframeContent = document.getElementById('interactive-map').contentDocument;
@@ -63,6 +66,7 @@
                     }
                 });
             });
+        }
     </script>
     
 </body>
