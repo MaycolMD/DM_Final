@@ -24,7 +24,23 @@ Clone el repositorio:
     git clone https://github.com/MaycolMD/DM_Final.git
 ```
 
-Ubicado en la carpeta graphql_flask, asegúrese de tener las dependencias instaladas: 
+Ubicado en la carpeta graphql_flask, asegúrese de tener las dependencias instaladas:
+Inicie su ambiente virtual,
+```bash
+    python -m venv venv
+```
+
+Acceda a su ambiente virtual,
+En Windows,
+```bash
+    .\venv\Scripts\activate
+```
+en Linux,
+```bash
+    source venv/Scripts/activate
+```
+
+Instale las dependencias necesarias,
 ```bash
     pip install -r requirements.txt
 ```
