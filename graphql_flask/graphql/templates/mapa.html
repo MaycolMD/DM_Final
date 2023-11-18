@@ -53,7 +53,6 @@
             var iframeContent = document.getElementById('interactive-map').contentDocument;
             var departamentos = iframeContent.querySelectorAll('.leaflet-interactive');
             departamentos.forEach(function(departamento) {
-                console.log(departamento);  // Muestra información sobre el elemento
                 departamento.addEventListener('click', function() {
                     var nombreDepartamento = departamento.getAttribute('data-nombre');
                     if (nombreDepartamento) {
