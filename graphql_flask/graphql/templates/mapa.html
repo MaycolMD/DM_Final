@@ -41,11 +41,30 @@
 </head>
 <body>
     <div class="contenedor-imagen">
-        <img src="{{ url_for('static', filename='images/Mapa.png') }}" alt="Mapa de colores">
+        <iframe id="interactive-map" src="{{ url_for('static', filename='map.html') }}" height="800" width="700"></iframe>
     </div>
     <div class="contenedor-leyenda">
         <img src="{{ url_for('static', filename='images/Leyenda.png') }}" alt="Leyenda">
     </div>
     <a href="/">Volver a la Página Principal</a>
+
+    <script>
+        document.getElementById('interactive-map').onload = function() {
+            var iframeContent = document.getElementById('interactive-map').contentDocument;
+            var departamentos = iframeContent.querySelectorAll('.leaflet-interactive');
+            departamentos.forEach(function(departamento) {
+                console.log(departamento);  // Muestra información sobre el elemento
+                departamento.addEventListener('click', function() {
+                    var nombreDepartamento = departamento.getAttribute('data-nombre');
+                    if (nombreDepartamento) {
+                        var redirectURL = 'http://127.0.0.1:5000/dpto?departamento=' + nombreDepartamento.toLowerCase();
+                        window.location.href = redirectURL;
+                    } else {
+                        console.error('Atributo data-nombre no encontrado o es nulo.');
+                    }
+                });
+            });
+    </script>
+    
 </body>
 </html>
