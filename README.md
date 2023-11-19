@@ -37,7 +37,7 @@ En Windows,
 ```
 en Linux,
 ```bash
-    source venv/Scripts/activate
+    source venv/bin/activate
 ```
 
 Instale las dependencias necesarias,
