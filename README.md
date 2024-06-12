@@ -1,4 +1,6 @@
 # DM_Final
+Este proyecto utiliza datos del DANE para predecir el Índice de Pobreza Multidimensional en Colombia entre 2018 y 2022. Se emplean técnicas avanzadas de SKLearn para desarrollar modelos de aprendizaje automático, integrados con BigQuery para la gestión eficiente de grandes volúmenes de datos. La arquitectura incluye GraphQL y Flask para ofrecer una interfaz dinámica que facilita la visualización y consulta de datos específicos según las necesidades del usuario.
+
 # Proyecto de Índice de Pobreza Multidimensional en Colombia
 ## Objetivo
 Este proyecto tiene como objetivo principal predecir el Índice de Pobreza Multidimensional (IPM) en Colombia utilizando un conjunto de datos recopilado por el DANE de Hogares, Personas y Viviendas. El enfoque se centra en la aplicación de técnicas avanzadas de minería de datos, específicamente mediante el uso de algoritmos de aprendizaje automático proporcionados por la biblioteca SKLearn de Python.
